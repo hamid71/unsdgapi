@@ -33,7 +33,7 @@ const Details = ({ goal,id }) => {
     <div>
       {goal.filter(goals =>goals.code == id).map(goalfilter =>(
         
-            <p key={goalfilter.code} className={styles.code}>{goalfilter.description}</p>
+            <p key={goalfilter.title} className={styles.code}>{goalfilter.description}</p>
       ))}
    </div>
   )

@@ -21,7 +21,7 @@ const usgoals = ({ussdg}) => {
             <div className={styles.main}>
               {ussdg.map(ussdgs => (
                 <>
-                  <h2 className={styles.grid}>Goal {ussdgs.code}</h2>
+                  <h2 key={ussdgs.title} className={styles.grid}>Goal {ussdgs.code}</h2>
                   
                   <Link href={'/goals/' + ussdgs.code} key={ussdgs.code}>
 
